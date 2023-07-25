@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import ButtonCount from './buttonCount'
+import ButtonCount from "./ButtonCount"
 import { CartContext } from '../context/cartContext'
 
 const ItemDetail = ({item}) => {
