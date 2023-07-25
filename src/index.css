@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+/* Navbar */
+.navbar{
+    color: #F4F4F9;
+    background-color: #939BB6;
+}
+
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+}
+.navbar ul li a{
+    display: block;
+    padding: 5px 15px;
+    color: #f2f5f5;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+.navbar ul li ul.dropdown li{
+    display: block;
+}
+
+.navbar ul li ul.dropdown{
+    width: 100%;
+    background-color: #2893EC;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.navbar ul a:hover{
+    background-color: #7bbddc;
+}
+
+.navbar ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+/* End Navbar */
+.container{
+    min-height: 84vh;
+    padding: 20px;
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    margin: 50px;
+    background-color: #7A72A4;
+    color: #F4F4F9;
+}
+.card-link{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards:hover{
+    transition: all 400ms ease;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    background-color: #657497a6;
+}
+
+.cards h1 {
+    margin-top: 10px;
+    word-wrap: break-word
+  }
+
+.price {
+    /* Alinear el precio en la parte inferior de la tarjeta */
+    margin-top: auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Cart */
+.empty-cart{
+    text-align: center;
+    margin: 20px;
+    & h2{
+        margin-bottom: 30px;
+    }
+    & a{
+        background-color: black;
+        color: #f2f2f2;
+        padding: 5px 20px;
+    }
+}
+/* end Cart */
+
+
+/* Detail Productos */
+.container-side-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-card{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    ;
+}
+.side-card img {
+    width: 500px; 
+    height: 455px;
+    padding: 10px;
+    border-radius: 8px; /* Para redondear las esquinas de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el contenido de texto */
+  }
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.content h1{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+}
+.content p{ 
+    padding: 0px 20px;
+}
+
+/* end Detail Products */
+
+
+/* form */
+.form-cart{
+    background-color: #f2f5f5;
+    text-align: center;
+    width: 400px;
+    margin: 100px;
+    
+}
+.form-cart form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.form input{
+    margin: 5px;
+    padding: 5px;
+}
+.pruebas{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* end form */
+
+
+
+.footer{
+        position: sticky;
+        background-color: #939BB6; 
+}
