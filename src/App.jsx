@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
         <Navbar/>
-        <section className="container">
+        <section className="principal-container">
           <Routes>
               <Route path="/" element={<ItemListContainer/>}/>
               <Route path="/category/:category" element={<ItemListContainer/>}/>
