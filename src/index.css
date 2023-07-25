@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 *{
     box-sizing: border-box;
@@ -100,14 +100,14 @@
 .empty-cart{
     text-align: center;
     margin: 20px;
-    & h2{
-        margin-bottom: 30px;
-    }
-    & a{
-        background-color: black;
-        color: #f2f2f2;
-        padding: 5px 20px;
-    }
+}
+.empty-cart h2{
+    margin-bottom: 30px;
+}
+.empty-cart a{
+    background-color: black;
+    color: #f2f2f2;
+    padding: 5px 20px;
 }
 /* end Cart */
 
