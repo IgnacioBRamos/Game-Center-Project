@@ -19,11 +19,13 @@ const ButtonCount = ({stock,handleAddToCart}) => {
 
 
   return (
-    <div>
-        <button onClick={clickPlus} className='btn btn-xs'>+</button>
-        <strong className="mx-3">{count}</strong>
-        <button onClick={clickMinus} className='btn btn-xs'>-</button>
-        <button disabled={ count === 0 || stock <=0 } onClick={()=>handleAddToCart(count)} className='btn m-3' >Agregar a carrito</button>
+    <div className='button-container'>
+        <div className=' pb-4'>
+            <button onClick={clickPlus} className='btn btn-xs'>+</button>
+            <strong className="mx-3">{count}</strong>
+            <button onClick={clickMinus} className='btn btn-xs'>-</button>
+        </div>
+        <button disabled={ count === 0 || stock <=0 } onClick={()=>handleAddToCart(count)} className='btn button' >Agregar a carrito</button>
 
     </div>
   )

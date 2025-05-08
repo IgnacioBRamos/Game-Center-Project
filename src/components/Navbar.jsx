@@ -4,19 +4,19 @@ import { Link } from "react-router-dom"
 const Navbar = () => {
   return (
 
-    <div className="navbar bg-base-content flex flex-row justify-between">
+    <div className="navbar  flex flex-row justify-between">
 
       <Link to={"/"}>
-        <img src="/control-de-juego.png" className="bg-white p-1 rounded mx-2" alt="" />
-        Gamin Center
+        <img src="/control-de-juego.png" className="p-1 rounded mx-2 logo size-48" alt="" />
+        <p className="text-xl">Gaming Center</p>
       </Link>
 
 
       <ul>
-        <li><Link to={"/category/monitor"}>Monitores</Link></li>
-        <li>
-          <a href="#">Perifericos</a>
+        <li> 
+          <a href="/" >Productos</a>
           <ul className="dropdown">
+            <li><Link to={"/category/monitor"}>Monitores</Link></li>
             <li><Link to={"/category/mouse"}>Mouse</Link></li>
             <li><Link to={"/category/teclado"}>Teclado</Link></li>
             <li><Link to={"/category/auriculares"}>Auriculares</Link></li>
@@ -24,7 +24,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <CartWidget />
+      <CartWidget/>
     </div>
   )
 }

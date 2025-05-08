@@ -18,7 +18,7 @@ const Cart = () => {
       <table className="table w-full">
 
         <thead>
-          <tr>
+          <tr className='text-xl text-slate-950'>
             <th></th>
             <th></th>
             <th>Producto</th>
@@ -31,9 +31,9 @@ const Cart = () => {
 
           {cart.map(item =>
 
-            <tr>
+            <tr className='text-base'>
               <th className='btn my-10 btn-error btn-outline' onClick={() => { removeProduct(item.id) }}>X</th>
-              <th><img src={item.thumbnails} alt="Movie" className='w-20' /></th>
+              <th><img src={item.thumbnails} alt="Movie" className='w-40' /></th>
               <td>{item.name}</td>
               <td>${item.price}</td>
               <td>{item.quantity}</td>
@@ -47,8 +47,8 @@ const Cart = () => {
             <th></th>
             <th></th>
             <th></th>
-            <th>Total</th>
-            <th className='text-base'>${totalPriceCart()}</th>
+            <th className='text-xl text-[#00D9CF]'>Total</th>
+            <th className='text-base text-slate-950'>${totalPriceCart()}</th>
           </tr>
 
         </tfoot>

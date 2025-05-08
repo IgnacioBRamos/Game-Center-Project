@@ -11,6 +11,7 @@ function App() {
  
   return (
     <BrowserRouter>
+      <div className="containers">
         <Navbar/>
         <section className="principal-container">
           <Routes>
@@ -22,6 +23,9 @@ function App() {
           </Routes>
         </section>
         <Footer/>
+
+      </div>
+        
     </BrowserRouter>
   )
 }
